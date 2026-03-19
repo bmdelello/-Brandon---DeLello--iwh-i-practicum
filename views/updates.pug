@@ -1,0 +1,17 @@
+html
+    head
+        title #{title}
+    body
+        h1 Add a New Pet
+        a(href='/') Return to the homepage
+        form(action='/update-cobj' method='POST')
+            div
+                label Name:
+                input(type='text' name='name')
+            div
+                label Description/Bio:
+                input(type='text' name='descriptionbio')
+            div
+                label Pet Age:
+                input(type='number' name='pet_age')
+            button(type='submit') Submit
